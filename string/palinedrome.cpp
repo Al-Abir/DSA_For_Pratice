@@ -22,6 +22,7 @@ class Solution{
 int main()
 {
     
+   
      string s ="madam";
      Solution solution;
      bool ans = solution.isPalindrome(s);
