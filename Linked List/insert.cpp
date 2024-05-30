@@ -25,12 +25,21 @@ void insertAtTail(Node* &tail, int data){
         tail->next = temp;
         tail = temp;
 }
-void insertAtMid(Node* head, int postion, int data){
+void insertAtMid(Node* tail,Node* head, int postion, int data){
+         if(postion ==1){
+            insertAtHead(head,data);
+            return;
+         }
         Node* temp = head;
         int cnt =1;
         while(cnt <postion-1){
             temp = temp->next;
             cnt++;
+        }
+        //
+        if(temp->next==NULL){
+            insertAtTail(tail,data);
+            return;
         }
         //new node create
        Node* nodeinsert = new Node(data);
@@ -72,9 +81,12 @@ int main()
      print(head);
      cout<<endl;
 
-     insertAtMid(head,3,22);
+     insertAtMid(tail,head,3,22);
      print(head);
      cout<<endl;
+
+     cout<<head->data<<endl;
+     cout<<tail->data<<endl;
 
 
     return 0;
