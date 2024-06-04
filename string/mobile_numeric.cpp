@@ -36,7 +36,7 @@ int main()
             "666", "7",   "77",  "777", "7777", "8",   "88",
             "888", "9",   "99",  "999", "9999" };
  
-    string input = "GEEKSFORGEEKS";
+    string input = "ABIR";
     cout << printSequence(str, input);
     return 0;
 }
