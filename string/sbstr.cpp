@@ -47,6 +47,13 @@ string longestPalindrome(string s) {
         }
     }
     return s.substr(start, maxLength);
+    /*
+        
+    // Print the longest palindromic substring
+     for (int i = start; i < start + maxLength; i++) {
+        cout << s[i];
+    }
+    */
 }
 
 // Main function to test the code
