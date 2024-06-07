@@ -12,6 +12,8 @@ public:
         string ans = "";
         for (int i = 0; i < strs[0].length(); i++) {
             for (int j = 0; j < strs.size() - 1; j++) {
+                  int n = strs.size() - 1;
+                  cout<<n;
                 if (strs[j][i] != strs[j + 1][i]) return ans;
             }
             ans += strs[0][i];
