@@ -34,7 +34,7 @@ void instertAtTail(Node* &tail, int d){
     tail = temp;
 }
 void insertAtMiddle(Node* &tail ,Node* &head, int pos, int d){
-
+           
           if(pos == 1){
              insertAtHead(head,d);
             return;
@@ -99,7 +99,6 @@ int main()
     insertAtHead(head,12);
     print(head);
     cout<<endl;
-    
     cout<<endl;
     Node* tail = node1;
     instertAtTail(tail,20);
