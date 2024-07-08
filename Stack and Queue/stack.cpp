@@ -42,7 +42,7 @@ class stack{
 
 int main()
 {
-    stack st;
+      
     st.push(10);
     st.push(15);
     st.push(13);
